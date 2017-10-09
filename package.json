@@ -4,12 +4,23 @@
   "description": "Return if a string is a guid or not",
   "main": "index.js",
   "scripts": {
-    "test": "npm test guidvalidator.test.js"
+    "test": "mocha --reporter spec",
+    "codecov": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec && cat ./coverage/coverage.json | ./node_modules/codecov.io/bin/codecov.io.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharkbait10/guidvalidator.git"
   },
   "keywords": [
     "guid",
     "validator"
   ],
   "author": "Irene Bonta'",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "aguid": "^1.0.4",
+    "codecov.io": "^0.1.6",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4"
+  }
 }
