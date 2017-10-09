@@ -1,0 +1,15 @@
+{
+  "name": "guidvalidator",
+  "version": "1.0.0",
+  "description": "Return if a string is a guid or not",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test guidvalidator.test.js"
+  },
+  "keywords": [
+    "guid",
+    "validator"
+  ],
+  "author": "Irene Bonta'",
+  "license": "ISC"
+}
